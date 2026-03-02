@@ -39,7 +39,7 @@ export default function ProductGrid() {
         </div>
 
         {/* PRODUCT GRID - 2 columns on mobile for better browsing */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-10 gap-y-12 md:gap-y-20">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-10 gap-y-12 md:gap-y-20">
           {filteredProducts.map((product) => (
             <div key={product.id} className="group relative">
               <RevealImage src={product.image} alt={product.name} />
