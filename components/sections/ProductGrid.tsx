@@ -76,12 +76,12 @@ export default function ProductGrid() {
                 </div>
 
                 {/* MOBILE ADD BUTTON */}
-                <button 
+                {/* <button 
                   onClick={() => addToCart(product)}
                   className="w-full mt-4 py-3 border border-stone-200 text-[10px] uppercase tracking-widest font-bold md:hidden active:bg-stone-900 active:text-white transition-colors"
                 >
                   Add to Bag — {product.price}
-                </button>
+                </button> */}
               </div>
             </div>
           ))}
