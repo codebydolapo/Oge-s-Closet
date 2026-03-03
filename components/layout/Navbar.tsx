@@ -2,9 +2,9 @@
 import { Logo } from "../ui/Logo";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useCart } from "@/context/CartContext";
+import data from "@/config/data";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -37,7 +37,7 @@ export default function Navbar({ onCartClick }: { onCartClick: () => void }) {
       {/* Brand Name - Hidden on small mobile to save space, visible on tablet up */}
       <div className="flex gap-8 text-xs uppercase tracking-widest font-medium">
         <div className="hero-text text-lg md:text-2xl font-serif font-semibold capitalize hidden sm:block">
-          Oge&apos;s Closet
+          {data.businessName}
         </div>
         {/* Mobile Menu Icon (Placeholder) */}
         <button className="sm:hidden interactive uppercase text-[10px] tracking-widest">Menu</button>

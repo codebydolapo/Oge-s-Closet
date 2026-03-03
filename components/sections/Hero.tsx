@@ -3,6 +3,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Logo } from "../ui/Logo";
+import data from "@/config/data";
 
 export default function Hero() {
   const container = useRef(null);
@@ -38,12 +39,12 @@ export default function Hero() {
         
         {/* Font size scales from 4xl on mobile to 7xl on desktop */}
         <h1 className="hero-text text-4xl sm:text-5xl md:text-7xl font-serif leading-tight">
-          Oge&apos;s Closet
+          {data.businessName}
         </h1>
         
         {/* Tracking (letter spacing) reduced on mobile so it fits on one line */}
         <p className="hero-text text-[10px] md:text-sm uppercase tracking-[0.2em] md:tracking-[0.5em] mt-4 opacity-80">
-          Shoes • Bags • Timeless Pieces
+          {data.sampleProducts[0]} • {data.sampleProducts[1]} • {data.sampleProducts[2]}
         </p>
       </div>
     </section>

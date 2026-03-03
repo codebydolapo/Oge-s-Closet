@@ -1,4 +1,5 @@
 import { Logo } from "../ui/Logo";
+import data from "@/config/data";
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
               <Logo />
             </div>
             <p className="text-stone-400 text-[10px] leading-relaxed uppercase tracking-widest max-w-[250px]">
-              Oge&apos;s Closet: A curated collection of timeless silhouettes and luxury essentials.
+              {data.businessName}: {data.description}.
             </p>
           </div>
 
@@ -49,7 +50,7 @@ export default function Footer() {
         {/* Legal Row */}
         <div className="flex flex-col sm:flex-row justify-between items-center pt-8 border-t border-stone-200 gap-4">
           <p className="text-[9px] text-stone-400 uppercase tracking-[0.2em] text-center sm:text-left">
-            &copy; 2026 Oge&apos;s Closet. Created for Portfolio.
+            &copy; 2026 {data.businessName}. Created by Dolapo 💻.
           </p>
           <div className="flex gap-6 md:gap-8 text-[9px] text-stone-300 uppercase tracking-[0.2em]">
             <a href="#" className="hover:text-black transition-colors">Privacy Policy</a>

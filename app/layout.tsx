@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
+import data from "@/config/data";
 
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Oge's Closet | Luxury Accessories",
+  title: `${data.businessName} | Luxury Accessories`,
   description: "Bags, Shoes, and Timeless Style",
 };
 
